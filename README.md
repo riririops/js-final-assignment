@@ -66,7 +66,7 @@ Tailwind CSS を使っていると、VSCode 上で `Unknown at rule @tailwind` �
   },
   "css.lint.unknownAtRules": "ignore"
 }
-
+```
 
 
 ### セキュリティ強化ポイント
