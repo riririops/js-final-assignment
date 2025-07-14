@@ -44,7 +44,8 @@
 git clone https://github.com/yourname/habit-growth-app.git
 cd habit-growth-app
 npm install
-npm run dev```
+npm run dev
+```
 
 ##  Tailwind CSS を VSCode で快適に使うための設定
 
