@@ -83,5 +83,5 @@ Tailwind CSS を使っていると、VSCode 上で `Unknown at rule @tailwind` �
 - アチーブメントの実装
 
 # 開発者
-作成者:せぱた
+作成者:せぱた   
 GitHub:riririops
