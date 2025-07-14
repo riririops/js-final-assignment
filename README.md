@@ -44,7 +44,7 @@
 git clone https://github.com/yourname/habit-growth-app.git
 cd habit-growth-app
 npm install
-npm run dev
+npm run dev```
 
 ##  Tailwind CSS を VSCode で快適に使うための設定
 
@@ -64,7 +64,7 @@ Tailwind CSS を使っていると、VSCode 上で `Unknown at rule @tailwind` �
     "strings": true
   },
   "css.lint.unknownAtRules": "ignore"
-}'''
+}
 
 
 
