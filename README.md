@@ -64,7 +64,7 @@ Tailwind CSS を使っていると、VSCode 上で `Unknown at rule @tailwind` �
     "strings": true
   },
   "css.lint.unknownAtRules": "ignore"
-}
+}'''
 
 
 
