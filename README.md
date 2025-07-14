@@ -41,8 +41,7 @@
 ### インストールと起動
 
 ```bash
-git clone https://github.com/yourname/habit-growth-app.git
-cd habit-growth-app
+cd js-Assignment-main
 npm install
 npm run dev
 ```
