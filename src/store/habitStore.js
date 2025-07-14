@@ -3,8 +3,10 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import CryptoJS from 'crypto-js';
 
-const SECRET_KEY = 'your-secret-key'; // 環境変数化推奨
+// セキュリティのための暗号化キー（本番環境では環境変数にすることを推奨）
+const SECRET_KEY = 'your-secret-key';
 
+// ローカルストレージ保存データの暗号化・復号化関数
 const encrypt = (data) => CryptoJS.AES.encrypt(JSON.stringify(data), SECRET_KEY).toString();
 const decrypt = (data) => {
   try {
@@ -15,10 +17,13 @@ const decrypt = (data) => {
   }
 };
 
+// Zustand ストア定義（暗号化付き永続化）
 export const useHabitStore = create(
   persist(
     (set) => ({
       habits: [],
+
+      // 習慣のチェック状態をトグル（ON/OFF）
       toggleHabit: (id, dateStr) =>
         set((state) => {
           const newHabits = state.habits.map((h) => {
@@ -29,11 +34,15 @@ export const useHabitStore = create(
           });
           return { habits: newHabits };
         }),
+
+      // 習慣を追加
       addHabit: (name) =>
         set((state) => ({
           habits: [...state.habits, { id: Date.now(), name, history: {} }],
         })),
-      removeHabitById: (id) =>
+
+      // 習慣を削除（ID指定）
+      deleteHabit: (id) =>
         set((state) => ({
           habits: state.habits.filter((h) => h.id !== id),
         })),
