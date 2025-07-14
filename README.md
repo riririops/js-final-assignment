@@ -41,7 +41,7 @@
 ### インストールと起動
 
 ```bash
-cd js-Assignment-main
+cd js-kadai-main
 npm install
 npm run dev
 ```
