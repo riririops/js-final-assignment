@@ -5,7 +5,7 @@ import StatsChart from './components/StatsChart';
 import { useHabitStore } from './store/habitStore';
 import { useGrowthStore } from './store/growthStore';
 import Home from './pages/Home';
-import './index.css';
+import '../css/index.css';
 
 
 export default function App() {
